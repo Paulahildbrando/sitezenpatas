@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>ZEN PATAS</title>
+        <link rel="stylesheet" href="zenpets.css"/>
+        <link rel="icon" type="image/png" href="Imagens Pet/redendo_LOGO_ZEN_PATAS_15.05.2025 (1).png">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <header>
+            <div class="lado-a-lado">
+                <img src="Imagens Pet/LOGO_ZEN_PATAS_horizontal.png" alt="ZEN PATAS LOGOTIPO" class="logo-principal"> <!-- Logotipo-->
+                 
+        
+             <div class="search-bar"> <!-- Caixa de texto com botão -->
+                 <form>
+                     <input type="text" placeholder="Digite sua pesquisa" id="searchInput"/>
+                     <button type="submit">Buscar</button>
+                </form>
+            </div>
+                                
+                <div class="user-info">
+                    <img src="Imagens Pet\cadastro_pessoa.png" alt="Usuário" class="logo-botao-hominho">
+                    
+                    <div class="user-text">
+                        <p>Olá! Faça login</p><small>ou cadastre-se</small>
+                    </div>
+                    
+                    <img src="Imagens Pet\cestinha2.png" alt="Carrinho" class="logo-botao-carrinho">
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#topo">HOME</a></li>
+                    <li><a href="#produtos">PRODUTOS</a></li>
+                    <li><a href="#servicos">SERVIÇOS</a></li>
+                    <li><a href="#localizacao">LOCALIZAÇÃO</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+                </ul>
+            </nav>
+        </header>
+            
+        <section class="carrossel" id="topo">
+            <img src="Imagens Carossel\\img1.png" name="slide" id="slide"/>
+            <div class="arrow prev" id="prev">&#10094;</div><!--botão para trás-->
+            <div class="arrow next" id="next">&#10095;</div><!--botão para frente-->
+        </section>
+
+        <script language="JavaScript">
+            let contador = 0;
+            const imagens = [
+                    "Imagens Carossel\\img1.png",
+                    "Imagens Carossel\\img2.png",
+                    "Imagens Carossel\\img3.png"
+                    ];
+            const tempo = 2000; /* muda imagem de 2s em 2s*/
+            
+            const slide = document.getElementById("slide");
+
+            let loop = setInterval(proximoSlide, tempo);
+
+            document.getElementById("next").addEventListener("click", () => {
+                    proximoSlide();
+                    reiniciarLoop();
+                });
+
+            document.getElementById("prev").addEventListener("click", () => {
+                    anteriorSlide();
+                    reiniciarLoop();
+                });
+                
+            function proximoSlide()
+                {
+                    contador = (contador + 1) % imagens.length;
+                    slide.src = imagens[contador];
+                }
+
+            function anteriorSlide()
+                {
+                    contador = (contador - 1 + imagens.length) % imagens.length;
+                    slide.src = imagens[contador];
+                }
+                
+            function reiniciarLoop()
+                {
+                    clearInterval(loop);
+                    loop = setInterval(proximoSlide, tempo);
+                }
+        </script>
+
+        <section id="produtos">
+            <h1 class="faixa">Produtos</h1>
+            
+            <br/><br/>     
+
+            <div class="container"> 
+                <img src="Imagens Pet\1_bola.png"/>
+                <img src="Imagens Pet\2_cordao.png"/>
+                <img src="Imagens Pet\3_comedouro.png"/>
+            </div>
+                    
+            <br></br>
+                    
+            <div class="container">
+                <img src="Imagens Pet\4_pena.png"> 
+                <img src="Imagens Pet\5_fita.png">
+                <img src="Imagens Pet\6_rato.png">
+            </div>
+        </section>
+                      
+        <section id="servicos">
+            <h1 class="faixa">Serviços</h1>
+            
+            <br/><br/>          
+            
+            <div class="container2">
+                <img src="Imagens Pet\1_banho.png">
+                <img src="Imagens Pet\2_tosa.png">
+                <img src="Imagens Pet\3_hidratacao.png">
+            </div>
+
+            <br></br>
+                    
+            <div class="container2">
+                <img src="Imagens Pet\4_day.png">
+                <img src="Imagens Pet\5_day.png">
+                <img src="Imagens Pet\6_day.png">
+            </div>
+            
+            <br></br><br></br>
+            
+            <div class="taxi-imagem">
+                <img src="Imagens Pet\banho_imagem_texto.png">
+            </div>
+
+            <div class="texto-horario">
+                <video controls autoplay loop muted>
+                    <source src="Imagens Pet\video_banho_petz_salvo_15.05.2025.mp4" type="video/mp4">
+                            Seu navegador não suporta a reprodução de vídeo.
+                </video>
+                        
+                <img src="Imagens Pet\texto_video.png">
+                
+            </div>
+
+        </section>
+            <section id="localizacao">
+                <h1 class="faixa">Localização</h1>
+                   
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7316.653187618172!2d-46.73103962454751!3d-23.520753060101825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d7fd100d%3A0x9eac09850046cfa4!2sR.%20Guaip%C3%A1%2C%20678%20-%20Vila%20Leopoldina%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005089-000!5e0!3m2!1spt-BR!2sbr!4v1748887714354!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </section>
+
+            <section id="contato">
+                <h1 class="faixa">Contato</h1>
+            </section>
+
+            <footer>
+                <div class="contato-redes">
+                    <p>Newsletter</p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="txtemail" id="txtemail" placeholder="Email" required maxlength="30"/>
+                    <button>Inscreva-se</button>
+
+                    <div class="whatsapp">
+                        <img src="Imagens Pet\whatsap.png" class="icon">
+                        <p>(11) 91000-2000</p>
+                    </div>
+                    
+                    <div class="instagram">
+                        <img src="Imagens Pet\instagram.png" class="icon">
+                        <p>@zen_patas</p>
+                    </div>
+    
+                    <div class="facebook">
+                        <img src="Imagens Pet\2_facebook.png" class="icon">
+                        <p>@zen_patas</p>
+                      </div>
+                </div>
+    
+                <div class="pagamento">
+                    <p>Meios de Pagamento</p>
+                    <img src="Imagens Pet\pagamento.png">
+                </div>
+                
+                <br></br>
+                
+                <h5>&copy; - 2025 todos os direitos reservados</h5>
+            </footer>
+         
+        </body>
+    </html>

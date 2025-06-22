@@ -1,0 +1,637 @@
+header
+ {
+   position:fixed;
+   width:100%;
+   margin-top:0px;
+   top:0px;
+   margin-left:0px;
+   left:0px;
+   background-color: rgb(245, 245, 227);
+   z-index: 2; /* O header fica por cima */
+ }
+
+header div
+ {
+   background-color: rgb(245, 245, 227);
+   
+ }
+
+ header nav ul li a:hover
+{
+    color:rgb(54, 137, 82);
+    text-decoration:underline;
+    background:linear-gradient(to bottom, rgb(255,255,255), rgb(170,210,161), rgb(255,255,255));
+    font-weight: bold;
+}
+
+*
+{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+:target
+{
+  scroll-margin-top: 170px;
+}
+
+section div img
+{
+    width: 100%;
+}
+
+nav ul
+{
+    background-color: rgb(245,245,227);
+    display: flex;
+    gap:20px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+    height: 30px;
+    margin-bottom: 50px;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-family: Calibri;
+    font-size:120%;
+    transition-duration: 3s;
+    transition-delay: 1.5s;
+    transition-timing-function: linear;
+    transition-property: all;
+    font-weight: bold;
+}
+
+
+
+ .container
+ {
+    display: flex;
+    gap: 167px;
+    width: 250px;
+    height: auto;
+    margin-left: 10%;
+    margin-bottom: 1%;
+ }
+
+ .container2
+ {
+   display: flex;
+   gap: 167px;
+   width: 250px;
+   height: auto;
+   margin-left: 10%;
+ }
+
+ .horizonte
+ {
+ list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+ }
+
+ .horizonte li
+ {
+  display: inline;
+  margin-right: 15px;
+ }
+
+ .lado-a-lado
+ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+ }
+
+.logo-principal
+ {
+   margin-left:5%;
+   height: 80px;
+   margin-right: 50px;
+   margin-top: 2%;
+ }
+
+ .logo-botao-hominho
+ {
+   width:8%;
+   height: 8%;
+ }
+
+  .logo-botao-carrinho
+ {
+   margin-left:5%;
+   width:7%;
+   height:7%;
+ }
+
+ .search-bar
+ {
+   margin-left:15%;
+   display: flex;
+   width: 100%;
+   gap: 5px;
+ }
+
+ .search-bar input
+ {
+   border: none;
+   outline: none;
+   flex-grow: 1;
+ }
+
+ .search-bar button
+ {
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   padding: 5px 10px;
+   cursor: pointer;
+   border-radius: 5px;
+   width: 60%;
+ }
+
+ .search-bar button:hover
+ {
+   background-color: #e59400;
+ }
+
+ .user-info
+{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   width: 100%;
+}
+
+.user-text p
+{
+   margin: 0;
+   font-weight: bold;
+}
+
+.user-text small
+{
+   color: #555;
+}
+
+.login-info
+{
+   display: flex;
+   align-items: center;
+}
+
+body
+{
+  background-color: rgb(170,210,161);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.faixa
+{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  background: rgb(245,245,227);
+  width:100%;
+  height: 35px;
+  margin:0%;
+  text-align:center;
+}
+
+iframe
+{
+  width: 70%;
+  height: 400px;
+  margin-left: 0%;
+  margin-top: 2.5%;
+}
+
+
+footer img
+{
+  margin-left: 40%;
+  width: 20%;
+}
+
+.whatsapp img
+{
+  display:flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.whatsapp p
+{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  
+}
+
+.instagram img
+{
+  display:flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10%;
+ 
+}
+
+.instagram p
+{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  
+}
+
+.facebook img
+{
+  display:flex;
+  align-items: center;
+  margin:0 auto;
+  margin-top: 10%;
+ 
+}
+
+.facebook p
+{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+ 
+}
+
+.pagamento img
+{
+  background: rgb(245,245,227);
+ 
+}
+
+.pagamento p
+{
+  margin-left: 45%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.icon
+{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+h5
+{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+}
+.texto-horario{
+  padding-bottom:1.5%;
+}
+
+.texto-horario img
+{
+  display: inline;
+  width: 36%;
+  margin-left: 3%;
+  height: 310px;
+}
+
+video
+{
+  width: 37%;
+  height: 335px;
+  margin-left: 0%;
+  display: inline;
+}
+
+.taxi-imagem
+{
+  padding-bottom: 2%;
+}
+
+.taxi-imagem img
+{
+  width: 76%;
+  /*margin-left: 0%;*/
+}
+
+.contato-redes
+{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 1%;
+  /*margin-top: 20px;*/
+  flex-wrap: wrap;
+}
+
+
+
+.contato-redes p
+{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.contato-redes label
+{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.contato-redes button
+{
+   background-color: white;
+   border: 1px solid #ccc;
+   border-left: none;
+   border-radius: 0 4px 4px 0;
+   padding: 5px;
+   cursor: pointer;
+}
+
+.contato-redes button:hover
+ {
+   background-color: #e59400;
+ }
+
+
+ #produtos
+ {
+  align-items: center;
+  text-align: center;
+  padding-bottom:1.5%;
+ }
+
+ #servicos
+ {
+  align-items: center;
+  text-align: center;
+  padding-bottom:1.5%;
+ }
+
+ #localizacao
+ {
+  align-items: center;
+  text-align: center;
+  padding-bottom:1.5%;
+ }
+
+ #contato
+ {
+  align-items: center;
+  text-align: center;
+  padding-bottom:1.5%;
+ }
+
+ footer
+ {
+  background: rgb(245, 245, 227);
+  margin: 0;
+ }
+
+ form
+ {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+ }
+
+ .carrossel
+ {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 13%;
+  padding-bottom:1.5%;
+ }
+
+ .carrossel img
+ {
+  width: 100%;
+  height: auto;
+  display: block;
+  
+ }
+
+ .arrow  /*seta*/
+ {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  z-index: 1; /* A seta fica por trás do header */
+ }
+
+ .arrow:hover
+ {
+  background: rgba(0,0,0,0.8);
+ }
+
+ .arrow.prev
+ {
+  left: 10px;
+ }
+
+ .arrow.next
+ {
+  right: 10px;
+ }
+
+@media (max-width: 768px){
+  header {
+    flex-direction: column;
+    align-items: center;
+    /*position: relative;*/
+    position:fixed;
+    z-index: 2;
+  
+  }
+
+header div
+ {
+   background-color: rgb(245, 245, 227);
+   
+ }
+
+:target
+{
+  scroll-margin-top: 290px;
+}
+
+nav ul {
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+
+}
+
+nav {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 2%;
+
+}
+
+.container, .container2, .lado-a-lado{
+  flex-direction: column;
+  width: 60%;
+  margin-left:20%;
+  margin-right:20%;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo-principal {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 3%;
+}
+
+.logo-botao-hominho, .logo-botao-carrinho {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+.search-bar {
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  gap: 5px
+  
+}
+
+.search-bar input[type="text"], .search-bar button {
+  width: 50%;
+  margin-bottom: 8px;
+  font-size: 16px;
+
+}
+
+.search-bar button
+ {
+   width: 40%;
+ }
+
+.user-text {
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+
+iframe, video, .texto-horario img, .taxi-imagem img {
+  width: 90%;
+  height: auto;
+  margin: 10px auto;
+}
+
+.contato-redes {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pagamento
+{
+  background: rgb(245,245,227);
+  margin-left: 25%;
+  margin-right: 20%;
+  padding: 10px;
+  width: 100%;
+  
+}
+
+.pagamento p
+{
+  margin-left: 10%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+footer img {
+  width: 50%;
+  margin: 20px auto;
+
+}
+
+.carrossel {
+  width: 100%;
+  max-width: 100%;
+  padding-top: 55%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-top: 10px;
+  box-sizing: border-box;
+  top: 10px;
+}
+
+.carrossel img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-bottom: 3%;
+}
+
+.arrow {
+  font-size: 1em;
+  padding: 10px;
+  margin-top: 15%;
+}
+
+.login-carrinho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 90%;
+  margin: 10px auto;
+  font-size: 14px;
+}
+
+.nav ul li {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul li a {
+  padding: 8px 0;
+  font-size: 16px;
+}
+
+
+.login-info, .user-info {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+}
